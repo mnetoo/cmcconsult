@@ -3,13 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>CMC CONSULT</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/tabelas.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
-    <h4>TESTANTO PÁGINA NO AR COM GITHUB</h4>
-    <br>
-    <a href="./checklist.html" target="_blank">
-        <button>CHECKLIST</button>
-      </a>
+
+    <header>
+        <a href="#" target="_blank">LOGO CMC
+            <!-- <img src="./img/cmc.jpeg"> -->
+        </a>
+
+        <p><strong>CMC CONSULT</strong><br>
+            Correspondente Bancário Caixa Aqui Autorizado <br>
+            Costa & Cavalcante Serviços Administrativos LTDA <br>
+        </p>
+
+        <a href="https://www.caixa.gov.br/Paginas/home-caixa.aspx" target="_blank">
+            <img src="./img/caixa.png">
+        </a>
+    </header>
+
+    <main>
+
+        <section class="central">
+            <div class="quadroBranco" onclick="redirectToPage(this)" onmouseover="increaseSize(this)" onmouseout="resetSize(this)">
+                <div>
+                    <p>Formulário Checklist</p>
+                </div>
+            </div>
+
+            <div class="quadroBranco" onclick="redirectToPage2(this)" onmouseover="increaseSize(this)" onmouseout="resetSize(this)">
+                <div>
+                    <p>Formulário Cadastro</p>
+                </div>
+            </div>
+
+            <div class="quadroBranco" onclick="redirectToPage3(this)" onmouseover="increaseSize(this)" onmouseout="resetSize(this)">
+                <div>
+                    <p>Senhas</p>
+                </div>
+            </div>
+
+            <div class="quadroBranco" onclick="redirectToPage4(this)" onmouseover="increaseSize(this)" onmouseout="resetSize(this)">
+                <div>
+                    <p>Links Úteis</p>
+                </div>
+            </div>
+        </section>
+           
+    </main>
+
+
+
+
+    <!-- RODAPÉ -->
+    <!-- <footer>
+        <p class="d-none d-xl-inline d-print-inline">Desenvolvido por Marcus Neto</p>
+        <p class="d-none d-xl-inline d-print-inline">Edifício Centro Sul - Sala 22</p>
+        <a href="mailto:cepag@ufpr.br" class="footer-link">
+            <i class="fas fa-envelope" id="icon"></i>
+            <span class="d-none d-xl-inline d-print-inline">cmcconsult@outlook.com</span>
+        </a>
+        <a href="tel:55 41 3361-3498" class="footer-link">
+            <i class="fas fa-phone" id="icon"></i>
+            <span class="d-none d-xl-inline d-print-inline">55 (41) 99819-9541</span>
+        </a>
+        <a href="https://www.instagram.com/cmcconsult" target="_blank" class="footer-link instagram">
+            <i class="fa-brands fa-instagram" id="icon"></i>
+        </a>
+    </footer> -->
+    
+    <script src="./javascript/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
