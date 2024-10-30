@@ -51,46 +51,43 @@ main input, span {
 
 /* Regras para a página de impressão */
 @media print {
-    /* Redefinir margens para folha A4 padrão (210 x 297 mm) */
     @page {
-        margin: 0.5cm;
-        margin-left: 1cm;
-        margin-right: 1cm;
+        margin: 0.5cm 0.5cm 0.5cm 0.5cm;
     }
-    body{
-      white-space: nowrap;
-      align-items: center;
-      background: none;
-    } 
+    *{
+        background: none ;
+    }
     header {
         display: none;
     }
-    p {
-        font-size: 12px;
-    }
-    input.form-control{
-      font-size: 7pt;
-      line-height: 0.5; 
-    }
-    select.form-control{
+    body {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        background: none;
+    } 
+    input.form-control {
         font-size: 8pt;
-        line-height: 1.2; 
-      }
-    select.form-select{
-        font-size: 9pt;
-        line-height: 1.2; 
-      }
+        line-height: 0.6; 
+    }
+    select.form-control, select.form-select {
+        font-size: 8pt;
+        line-height: 0.9;
+    }
     .no-print {
         display: none; 
     }
-    form{
-        grid-template-columns: auto 98vw auto !important; /* Divide o main em 3 colunas */
+    main {
+        display: grid;
+        grid-template-columns: auto 98vw auto !important;
         row-gap: 0.3vh !important;
         padding-top: 2vh !important;
-        line-height: 1 !important;
-        font-size: 10pt;
+        line-height: 0.8 !important;
+        font-size: 9pt;
+        background: none;
     }
-  }
+}
+
 
 
 /* Regras para celular (até 767px de largura) */
@@ -143,7 +140,7 @@ main input, span {
 /*ITENS CONTEÚDO DA PÁGINA*/
 
 .botaoAzul{
-    background-color:rgb(3, 28, 53) !important;
+    background-color: #4157a3 !important;
     color: white;
     border: none;
     border-radius: 5px;
