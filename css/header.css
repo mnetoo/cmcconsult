@@ -1,21 +1,18 @@
 /* header.css */
 
 header {
-    background-color: rgb(245, 250, 255);
+    background-color: rgb(3, 28, 53);
     display: grid;
     grid-template-columns: 0.5fr 3fr 0.5fr;
     column-gap: 2vh;
     padding: 4vh 6rem;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 header p{
     margin: 0;
-}
-
-header img {
-    height: 8vh;
 }
 
 /* Regras para a página de impressão */

@@ -88,7 +88,7 @@
 }
 
 .quadroBranco:hover {
-    background-color: rgb(141, 194, 238);
+    background-color: rgb(3, 28, 53);
     color: white;
     transform: translateY(-10px);
 }

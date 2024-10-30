@@ -1,5 +1,5 @@
 function redirectToPage() {
-    window.open("checklist/inicio.html", "_blank"); 
+    window.open("checklist/opcoes.html", "_blank"); 
 }
 
 function redirectToPage2() {
@@ -15,11 +15,11 @@ function redirectToPage4() {
 }
 
 function increaseSize(element) {
-    element.classList.add("aumentar"); // Adiciona a classe para aumentar apenas a div específica
+    element.classList.add("aumentar");
 }
 
 function resetSize(element) {
-    element.classList.remove("aumentar"); // Remove a classe para retornar ao tamanho original
+    element.classList.remove("aumentar");
 }
 
 /*==================================================================================================================*/
