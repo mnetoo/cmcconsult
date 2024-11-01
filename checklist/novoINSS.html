@@ -14,7 +14,9 @@
 </head>
 
 <header>
-    <img src="../img/Logo CMC.png" style="height: 100px; width: 200px; "> 
+    <a href="../index.html">
+        <img src="../img/Logo CMC.png" style="height: 100px; width: 200px; "> 
+    </a> 
 
     <p><strong>CMC CONSULT</strong><br>
         Correspondente Bancário Caixa Aqui Autorizado <br>
@@ -79,7 +81,7 @@
                     <input class="form-control" type="text" name="senha" id="senha">
 
                     <p>Margem</p>
-                    <input class="form-control" type="text" name="margem" id="margem" onblur="applyMask(this)" onfocus="removeMask(this)" oninput="updateLibCliente()">
+                    <input class="form-control" type="text" name="margem" id="margem" onblur="applyMask(this)" onfocus="removeMask(this)" oninput="updateLibCliente()" placeholder="R$ 0,00">
 
                 </div>
             </div>
@@ -90,17 +92,17 @@
                     <input class="form-control" type="number" name="prazo" id="prazo">
 
                     <p>Parcela</p>
-                    <input class="form-control" type="number" name="parcela" id="parcela">
+                    <input class="form-control" type="number" name="parcela" id="parcela" placeholder="R$ 0,00">
                 </div>
             </div>
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
             <div class="quatroColunas">
                 <div class="linha branca">
                     <p>Valor Líquido</p>
-                    <input class="form-control" type="text" name="liquid_cont" id="liquid_cont" onblur="applyMask(this)" onfocus="removeMask(this)" oninput="updateLibCliente()">
+                    <input class="form-control" type="text" name="liquid_cont" id="liquid_cont" onblur="applyMask(this)" onfocus="removeMask(this)" oninput="updateLibCliente()" placeholder="R$ 0,00">
 
                     <p>Valor Liberado</p>
-                    <input class="form-control" type="text" name="lib_cliente" id="lib_cliente" onblur="applyMask(this)" onfocus="removeMask(this)" oninput="updateLibCliente()">
+                    <input class="form-control" type="text" name="lib_cliente" id="lib_cliente" onblur="applyMask(this)" onfocus="removeMask(this)" oninput="updateLibCliente()" placeholder="R$ 0,00">
                 </div>
             </div>
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -139,18 +141,18 @@
             <div class="seisColunas">
                 <div class="linha branca">
                     <p>Âmparo CCA</p>
-                    <input class="form-control" type="text" name="amparo" id="amparo" onblur="applyMask(this)" onfocus="removeMask(this)" oninput="updateLibCliente()">
+                    <input class="form-control" type="text" name="amparo" id="amparo" onblur="applyMask(this)" onfocus="removeMask(this)" oninput="updateLibCliente()" placeholder="R$ 0,00">
             
                     <p>Vida CCA</p>
-                    <input class="form-control" type="text" name="vida" id="vida" onblur="applyMask(this)" onfocus="removeMask(this)" oninput="updateLibCliente()">
+                    <input class="form-control" type="text" name="vida" id="vida" onblur="applyMask(this)" onfocus="removeMask(this)" oninput="updateLibCliente()" placeholder="R$ 0,00">
 
                     <p>Prestamista</p>
-                    <input class="form-control" type="text" name="seguro" id="seguro" onblur="applyMask(this)" onfocus="removeMask(this)" oninput="updateLibCliente()">
+                    <input class="form-control" type="text" name="seguro" id="seguro" onblur="applyMask(this)" onfocus="removeMask(this)" oninput="updateLibCliente()" placeholder="R$ 0,00">
                 </div>
             </div>
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
             <div class="seisColunas">
-                <div class="linha branca fim">
+                <div class="linha branca">
                     <p>Indicação</p>
                     <input class="form-control" type="text" name="indicacao" id="indicacao">
                 
@@ -166,7 +168,15 @@
                     </select>
                 </div>
             </div>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+            <div class="duasColunas">
+                <div class="linha branca fim">                    
+                    <p>Observações</p>
+                    <textarea class="form-control" name="contratos_liquid" id="contratos_liquid"></textarea>
+                </div>
+            </div>
         </section>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
 
          <!-- BOTÂO -->
          <section class="tabela no-print" style="text-align:center; ">

@@ -2,7 +2,7 @@ function setupButtonNavigation(buttonId, targetUrl) {
     const button = document.getElementById(buttonId);
     if (button) {
         button.addEventListener('click', function() {
-            window.open(targetUrl, '_blank'); // Abre a URL em uma nova aba
+            window.location.href = targetUrl; // Abre a URL na mesma aba
         });
     } else {
         console.error(`Button with id ${buttonId} not found.`);

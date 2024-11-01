@@ -66,3 +66,13 @@ function fillCurrentDate() {
 
 // Chama a função ao carregar a página
 window.onload = fillCurrentDate;
+
+//====================================================================================================
+
+function calcularParcelasRestantes() {
+    const pagas = parseInt(document.getElementById("parcela_pagas").value) || 0;
+    const original = parseInt(document.getElementById("parcela_original").value) || 0;
+    const restantes = original - pagas;
+    
+    document.getElementById("parcela_restantes").value = restantes >= 0 ? restantes : 0;
+}
