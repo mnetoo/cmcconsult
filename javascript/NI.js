@@ -76,3 +76,19 @@ function calcularParcelasRestantes() {
     
     document.getElementById("parcela_restantes").value = restantes >= 0 ? restantes : 0;
 }
+
+//====================================================================================================
+
+// Chama o JSON para opções de universidades
+fetch('../json/agencias.json')
+    .then(response => response.json())
+    .then(data => {
+        const select = document.getElementById('agencia');
+        data.forEach(agencia => {
+            const option = document.createElement('option');
+            option.value = agencia.id;  // Define o valor do campo option com o ID
+            option.textContent = agencia.agencia;  // Exibe o nome da instituição
+            select.appendChild(option);
+        });
+    })
+    .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
